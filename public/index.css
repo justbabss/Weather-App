@@ -1,0 +1,107 @@
+.section{
+    backdrop-filter: blur(30px);
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    box-shadow: 0 1.8rem 3.7rem white;
+    text-align: center;
+}
+
+.search-container {
+    display: grid;
+    grid-template-columns: 8fr 3fr;
+    gap: 2.25rem;
+    margin:5% 11%;
+  }
+  .search-container input,
+  .search-container button {
+    outline: none;
+    font-size: 1.5rem;
+    border: none;
+  }
+
+  .search-container input {
+    padding: 0.8rem;
+    background-color: transparent;
+    border-bottom: 0.7px solid white;
+    color:white;
+  }
+  .search-container input::placeholder {
+    color:white;
+  }
+  .search-container input:focus {
+    border-color:white;
+  }
+  .search-container button {
+    color: blue;
+    background-color:white;
+    border-radius: 0.4rem;
+  } 
+  
+  #result h2 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.18rem;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 4.25rem 0;
+  }
+  .weather,
+  .desc {
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 2rem;
+    padding: 10px;
+  }
+  .weather {
+    margin-top:10px;
+  }
+  #result img {
+    margin: auto;
+    width: 7.2rem;
+    filter: drop-shadow(0 1.8em 3.7em var(--shadow));
+  }
+  #result h1 {
+    font-size: 40px;
+    margin: 3.3rem 0 0.7rem 0;
+    line-height: 0;
+    font-weight: 400;
+    color: white;
+  }
+  .temp-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+  }
+  .temp-container div {
+    padding: 0.3em 3em;
+  }
+  .temp-container div:first-child {
+    border-right: 1px solid white;
+  }
+  .temp-container .title {
+    font-weight: 600;
+    color: white;
+    font-size: 18px;
+  }
+  .temp-container .temp {
+    font-weight: 300;
+    color:white;
+    font-size: 18px;
+  }  
+  .msg {
+    margin-top: 1.8px;
+    color:white;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+  @media screen and (max-width: 450px) {
+    .section {
+      font-size: 14px;
+    }
+  }  
+

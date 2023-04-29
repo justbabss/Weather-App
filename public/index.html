@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="Assets/favicon_.svg" type="image/x-icon">
+</head>
+<body    class=" w-full h-full bg-no-repeat bg-cover my-[6%]"
+         style="background-image:url(assets/bg-weather.jpeg);">
+
+         <section class="section">
+            <div class="search-container">
+                <input
+                  type="text"
+                  placeholder="Enter a city name"
+                  id="city"
+                  value=""
+                />
+                <button id="search-btn">Search</button>
+              </div>
+              <div id="result"></div>
+            </div>
+        </section>
+
+        <script src="key.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>
