@@ -99,9 +99,17 @@
     text-transform: uppercase;
     letter-spacing: 0.1rem;
   }
-  @media screen and (max-width: 450px) {
+  @media only screen and  (max-width: 600px){
     .section {
       font-size: 14px;
-    }
+      height: 400px;
+      width: 300px;
+   }
+
+   body{
+    background-image: url("assets/bg-weather.jpeg");
+    width: 100%;
+    height: 100px;
+   }
   }  
 
